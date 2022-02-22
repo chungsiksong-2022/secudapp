@@ -37,3 +37,16 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'drop'
     publishLocation: 'pipeline'
+
+- task: SqlAzureDacpacDeployment@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(a38cf16c-8668-4313-b4fa-8e91aeeabe24)'
+    AuthenticationType: 'server'
+    ServerName: 'dev-secudapp.database.windows.net,1433'
+    DatabaseName: 'secudapp'
+    SqlUsername: 'chugnsiksong'
+    SqlPassword: 'SimpleLife2022'
+    deployType: 'DacpacTask'
+    DeploymentAction: 'Publish'
+    DacpacFile: '$(agent.releaseDirectory)'
+    IpDetectionMethod: 'AutoDetect'
