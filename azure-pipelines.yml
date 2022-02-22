@@ -53,5 +53,5 @@ steps:
     SqlPassword: 'SimpleLife2022'
     deployType: 'DacpacTask'
     DeploymentAction: 'Publish'
-    DacpacFile: '@(agent.BuildDirectory)/drop/SecuDapp.Database.dacpac'
+    DacpacFile: '$(agent.BuildDirectory)/SecuDapp.Database.dacpac'
     IpDetectionMethod: 'AutoDetect'
