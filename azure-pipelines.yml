@@ -35,11 +35,10 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: '**/*.dacpac'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    TargetFolder: '$(build.ArtifactStagingDirectory)'
 
-- task: PublishPipelineArtifact@1
+- task: PublishBuildArtifacts@1
   inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)/4 – secudapp.database/bin/Release'
-    artifact: 'secudapp'
-    publishLocation: 'filepath'
-
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
