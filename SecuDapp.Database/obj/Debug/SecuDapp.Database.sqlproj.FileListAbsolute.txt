@@ -1,0 +1,9 @@
+C:\TWP on Cloud\Development\SecuDapp.Database\SecuDapp.Database\bin\Debug\SecuDapp.Database.dacpac
+C:\TWP on Cloud\Development\SecuDapp.Database\SecuDapp.Database\bin\Debug\SecuDapp.Database.dll
+C:\TWP on Cloud\Development\SecuDapp.Database\SecuDapp.Database\bin\Debug\SecuDapp.Database.pdb
+C:\TWP on Cloud\Development\SecuDapp.Database\SecuDapp.Database\obj\Debug\Model.xml
+C:\TWP on Cloud\Development\SecuDapp.Database\SecuDapp.Database\obj\Debug\refactor.xml
+C:\TWP on Cloud\Development\SecuDapp.Database\SecuDapp.Database\obj\Debug\postdeploy.sql
+C:\TWP on Cloud\Development\SecuDapp.Database\SecuDapp.Database\obj\Debug\predeploy.sql
+C:\TWP on Cloud\Development\SecuDapp.Database\SecuDapp.Database\obj\Debug\SecuDapp.Database.dll
+C:\TWP on Cloud\Development\SecuDapp.Database\SecuDapp.Database\obj\Debug\SecuDapp.Database.pdb

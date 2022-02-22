@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "19a93961-ba28-456a-a627-556195377528": {
+      "ProjectGuid": "19a93961-ba28-456a-a627-556195377528",
+      "DisplayName": "SecuDapp.Database",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
