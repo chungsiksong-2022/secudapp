@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Terminal] (
+﻿CREATE TABLE [dbo].[Site] (
     [Id]                       UNIQUEIDENTIFIER DEFAULT (newid()) NOT NULL,
     [UserIdCreation]           UNIQUEIDENTIFIER NOT NULL,
     [UserIdUpdate]             UNIQUEIDENTIFIER NULL,
@@ -9,6 +9,6 @@
     [Name]                     NVARCHAR (200)   NOT NULL,
     [IconUrl]                  NVARCHAR (2000)  NULL,
     [AutomaticApprovalEnabled] BIT              DEFAULT ((0)) NOT NULL,
-    CONSTRAINT [PK_Terminal] PRIMARY KEY CLUSTERED ([Id] ASC)
+    CONSTRAINT [PK_Site] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
