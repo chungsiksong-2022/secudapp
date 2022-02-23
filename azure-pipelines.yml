@@ -22,23 +22,27 @@ steps:
     restoreSolution: '$(solution)'
 
 - task: VSBuild@1
+  displayName: 'Build'  
   inputs:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
 - task: VSTest@2
+  displayName: 'Run unit tests'
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
 - task: CopyFiles@2
+  displayName: "Copy dacpac files"
   inputs:
     Contents: '**/*.dacpac'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Database/dacpacs/'
 
 - task: PublishBuildArtifacts@1
+  displayName: "Publish artifacts"
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/Database/dacpacs/'
     ArtifactName: 'drop'
     publishLocation: 'Container'
