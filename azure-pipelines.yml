@@ -13,7 +13,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  dacpacFileName: 'Database.dacpac'
+  dacpacFileName: 'Database'
 
 steps:
 - task: NuGetToolInstaller@1
@@ -44,6 +44,6 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts'
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/${{ variables.dacpacFileName }}'
+    PathtoPublish: "$(Build.ArtifactStagingDirectory)/${{ variables.dacpacFileName }}.dacpac"
     ArtifactName: 'drop'
     publishLocation: 'Container'
