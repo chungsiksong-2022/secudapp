@@ -43,6 +43,6 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts'
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)\database.dactac'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/database.dacpac'
     ArtifactName: 'drop'
     publishLocation: 'Container'
